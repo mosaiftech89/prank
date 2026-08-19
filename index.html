@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        console.clear();
+
+        const lines = [
+            "Initializing secure connection...",
+            "Scanning device...",
+            "Finding IP address...",
+            "Accessing system files...",
+            "Downloading personal data...",
+            "████████████████ 100%",
+            "Decrypting passwords...",
+            "Locating user...",
+            "ACCESS GRANTED ☠️",
+            "",
+            "😂 GOTCHA! YE SIRF PRANK THA 😂"
+        ];
+
+        let i = 0;
+
+        const prank = setInterval(() => {
+            console.log("%c" + lines[i], "color:#00ff00; font-size:16px; font-family:monospace;");
+            i++;
+
+            if (i >= lines.length) {
+                clearInterval(prank);
+            }
+        }, 800);
+    </script>
+</body>
+
+</html>
